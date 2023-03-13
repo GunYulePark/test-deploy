@@ -7,9 +7,9 @@ on:
 name: Deploy String boot to Amazon EC2
 env:
   PROJECT_NAME: action_codedeploy
-  COOKIE_NAME: ${{ secrets.COOKIE_NAME }}
-  SECRET: ${{ secrets.SECRET }}
-  EXPIRATION_TIME: ${{ secrets.EXPIRATION_TIME }}
+#   COOKIE_NAME: ${{ secrets.COOKIE_NAME }}
+#   SECRET: ${{ secrets.SECRET }}
+#   EXPIRATION_TIME: ${{ secrets.EXPIRATION_TIME }}
 
 jobs:
   deploy:
