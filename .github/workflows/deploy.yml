@@ -5,7 +5,7 @@ on:
       
 name: Deploy String boot to Amazon EC2
 env:
-  PROJECT_NAME: action_codedeploy
+  PROJECT_NAME: test-deploy
 #   COOKIE_NAME: ${{ secrets.COOKIE_NAME }}
 #   SECRET: ${{ secrets.SECRET }}
 #   EXPIRATION_TIME: ${{ secrets.EXPIRATION_TIME }}
@@ -32,13 +32,10 @@ jobs:
         with:
           java-version: 11
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x ./gradlew
-        shell: bash
 
-#      - name: gradle wrapper
-#        run: gradle wrapper --gradle-version 7.5
-#        shell: bash
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        shell: bash
 
       - name: Build with Gradle
         run: ./gradlew build
