@@ -5,7 +5,7 @@ on:
       
 name: Deploy String boot to Amazon EC2
 env:
-  PROJECT_NAME: test-deploy
+  PROJECT_NAME: test4
 #   COOKIE_NAME: ${{ secrets.COOKIE_NAME }}
 #   SECRET: ${{ secrets.SECRET }}
 #   EXPIRATION_TIME: ${{ secrets.EXPIRATION_TIME }}
