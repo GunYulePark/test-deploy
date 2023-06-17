@@ -11,7 +11,10 @@ public class TestController {
         String testStr = "Hi~~!";
         System.out.println(testStr);
 
-        return testStr;
+        String testNum = "1234~~";
+        System.out.println(testNum);
+
+        return testNum;
     }
 
 
